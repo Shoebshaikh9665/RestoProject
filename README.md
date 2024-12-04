@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Restaurant
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # RestoProject
 >>>>>>> 80f178bab6920222934c6fed18670bb41b253560
+=======
+# RestoProject
+>>>>>>> origin/main
