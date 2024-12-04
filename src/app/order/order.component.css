@@ -1,0 +1,193 @@
+.order-page {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  
+  /* Background image with overlay */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), 
+    url('/assets/restaurantbgimg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffcc00; /* Bright color for contrast */
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.customer-details {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  backdrop-filter: blur(5px); /* Subtle blur effect */
+}
+
+.customer-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color:palevioletred;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-right: 300px;
+  color: #ffcc00; /* Highlighted text */
+}
+ 
+.form-group input {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  width: calc(100% - 30px);
+  margin-left: 10px;
+}
+input::placeholder{
+  color: rgb(171, 35, 35);
+}
+.form-group input:focus {
+  border-color: #ffcc00;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds spacing between items */
+  padding: 20px; /* Adds padding around the menu list */
+}
+
+.menu-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 280px; /* Ensure consistent width for all items */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column; /* Aligns content vertically */
+  justify-content: space-between; /* Ensures space between sections */
+  align-items: center; /* Centers content horizontally */
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.menu-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 180px; /* Prevent images from being too large */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin: 15px 0;
+}
+
+.menu-description {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.menu-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-price {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-order {
+  padding: 10px 20px;
+  background-color: #ff7c57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-order:hover {
+  background-color: #ff5a30;
+  transform: scale(1.05);
+}
+
+.cart {
+  margin-top: 40px;
+  text-align: left;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.cart h2 {
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn-checkout {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-checkout:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}

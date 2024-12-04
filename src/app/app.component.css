@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styling */
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #e8d9d4, #ff6f91, #ffc371);
+    box-shadow: 0 4px 8px rgba(215, 187, 187, 0.1);
+  }
+  
+  #logo img {
+    width: 40px;
+    height: auto;
+  }
+  h1{
+    font-family:sans-serif;
+    color: #805505;
+    font-size: 30px;
+  }
+  
+  #m1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+  
+  #m1 .sp a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+  }
+  
+  #m1 .sp a:hover {
+    color: #ff6f91;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  .logoI{
+    display: inline;
+  }
+  
+ /* Navbar - Responsive Design */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  #m1 {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  #m1 .sp a {
+    display:inline;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  #m1 .sp a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  #navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  #m1 {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  #m1 .sp a {
+    display:inline;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+  }
+}

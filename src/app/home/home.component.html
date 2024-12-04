@@ -1,0 +1,50 @@
+<section class="hero-section">
+    <div class="overlay">
+      <div class="content">
+        <h2>Welcome to Our Restaurant</h2>
+        <h1>Experience Fine Dining Like Never Before</h1>
+        <p>
+          Explore the taste of our expertly crafted dishes with fresh ingredients and a warm ambiance.
+        </p>
+        <button class="btn-book" (click)="toggleBookingForm()">Book a Table</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal for Booking Form -->
+  <div class="modal" *ngIf="showBookingForm">
+    <div class="modal-content">
+      <span class="close-btn" (click)="toggleBookingForm()">×</span>
+      <h2>Book Your Table</h2>
+      <form (ngSubmit)="onSubmitBooking()">
+        <input
+          type="text"
+          [(ngModel)]="booking.name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          [(ngModel)]="booking.email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <input
+          type="date"
+          [(ngModel)]="booking.date"
+          name="date"
+          required
+        />
+        <input
+          type="time"
+          [(ngModel)]="booking.time"
+          name="time"
+          required
+        />
+        <button type="submit" class="btn-submit">Book Now</button>
+      </form>
+    </div>
+  </div>
+  

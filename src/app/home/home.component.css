@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1{
+    color: #ffa500;
+  }
+  h2{
+    color: palevioletred;
+  }
+  
+  /* Hero Section Styling */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('/assets/restaurantbgimg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-book {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn-book:hover {
+    background-color: #ff8566;
+    transform: scale(1.05);
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-content form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .modal-content .btn-submit {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-content .btn-submit:hover {
+    background-color: #ff8566;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  /* Hero Section - Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .content {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .btn-book {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn-book {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+}
+/* Modal - Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .modal-content form input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .modal-content .btn-submit {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content form input {
+    font-size: 0.8rem;
+  }
+
+  .modal-content .btn-submit {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .close-btn {
+    font-size: 1.2rem;
+  }
+}

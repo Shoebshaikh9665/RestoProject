@@ -1,0 +1,64 @@
+
+<div class="order-page">
+    <h1 class="heading">Place Your Online Order</h1>
+    <p class="sub-heading">Select your favorite dishes and enjoy quick delivery!</p>
+  
+    <div class="customer-details">
+      <h2>Customer Information</h2>
+      <p>fill information before the order</p>
+      <div class="form-group">
+        <label for="name"><strong> Name  : </strong></label>
+        <input
+          id="name"
+          type="text"
+          [(ngModel)]="customerName"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email"><strong> Email  : </strong></label>
+        <input
+          id="email"
+          type="email"
+          [(ngModel)]="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="mobile"> <strong> Mobile: </strong></label>
+        <input
+          id="mobile"
+          type="tel"
+          [(ngModel)]="mobile"
+          placeholder="Enter your mobile number"
+          pattern="[0-9]{10}"
+          required
+        />
+      </div>
+    </div>
+    
+  
+    <div class="menu-list">
+      <div class="menu-item" *ngFor="let item of menuItems">
+        <img [src]="item.image" [alt]="item.name" class="menu-image" />
+        <h3 class="menu-title">{{ item.name }}</h3>
+        <p class="menu-description">{{ item.description }}</p>
+        <div class="menu-actions">
+          <span class="menu-price">Price: ₹{{ item.price }}</span>
+          <button class="btn-order" (click)="addToCart(item)">Order Now</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="cart" *ngIf="cart.length > 0">
+      <h2>Your Order</h2>
+      <ul>
+        <li *ngFor="let item of cart">{{ item.name }} - ₹{{ item.price }}</li>
+      </ul>
+      <p>Total: ₹{{ getTotalPrice() }}</p>
+      <button class="btn-checkout" (click)="checkout()">Checkout</button>
+    </div>
+  </div>
+  
