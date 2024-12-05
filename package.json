@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "restaurant",
   "version": "0.0.0",
   "scripts": {
@@ -22,7 +21,11 @@
     "@angular/platform-server": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.10",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "mime": "^4.0.4",
+    "mongoose": "^8.8.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -41,23 +44,6 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2"
-  }
-}
-=======
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "db.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "express": "^4.21.1",
-    "mongoose": "^8.8.3"
-  }
+  "type": "module"
 }
->>>>>>> origin/main
