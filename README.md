@@ -1,6 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # Restaurant
+Author-ShoebShaikh
+
+This is my first angular project on github.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
 
